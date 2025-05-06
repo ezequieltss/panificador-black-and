@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>controle de estoque</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>controle de estoque- panificadora bom café</h1>
+<!-- Formulário para adicionar os protudos!-->
+<form id="form-produto" >
+    <input type="text" id="nome" placeholder="Nome do Produto" required>
+    <input type="number" id="Quantidade" placeholder="quantidade" required>
+    <input type="text" id="Unidade " placeholder="unidade(ex:kg,unidade)" required>
+    <input type="text" id="Categoria" placeholder="categoria (ex:pão,doce)" required>
+    <button type="submit">adicionar produtos</button>
+</form>
+<!--campo de busca-->
+<input type="text" id="busca" placeholder="Buscar produto...">
+
+<!--Tabela para exibir os produtos-->
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>unidade</th>
+            <th>categoria</th>
+            <th>ações</th>
+
+        </tr>
+    </thead>
+    <tbody id="tabela-produtos">
+        <!-- Produtos serão inseridos aqui via Java script-->
+
+
+    </tbody>
+
+</table>
+</body>
+</html>
